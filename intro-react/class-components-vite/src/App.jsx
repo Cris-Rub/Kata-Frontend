@@ -13,6 +13,9 @@ class App extends Component {
     counter: 0,
     darkMode: false,
   };
+
+
+  
   handleClick=(type, value)=>{
     // Condition ? true : false
     let result=0
@@ -75,7 +78,7 @@ class App extends Component {
 
         {/* SOLUTION */}
         {this.state.counter >= 18 //if -> Primera validación
-        ? <AdultComponent/> : 
+        ? <AdultComponent test="reciviendoProps"/> : 
         this.state.counter <18 && this.state.counter >= 12 //else if -> Segunda validación
         ? <TeenagerComponent/>
         : (
